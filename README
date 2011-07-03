@@ -1,0 +1,13 @@
+Do you have the same feeling that using cookies in JavaScript is painful? If yes, you will probably like this script. The script offers a plain JavaScript object containing all stored cookies in form {cookieName:"cookieValue"}. The script automatically updates the object when you write new cookies, update some cookies or delete ones.
+
+To use this script just link the script in HEAD section of your document
+
+<script type="text/javascript" src="document.cookies.js"></script>
+
+... and then use it in your scripts.
+
+if(document.cookies['test']){
+    console.log(document.cookies.test);
+} else {
+    console.log("The cookie 'test' doesn't exist");
+}
