@@ -28,7 +28,6 @@
     } else if(Object.defineProperty) {
         Object.defineProperty(document, 'cookies', {
             get: parseAndReturn, // IE8
-            
             getter: parseAndReturn // IE8 beta
         });
     } else if (/*@cc_on @if (@_jscript)!@end @*/false) {
